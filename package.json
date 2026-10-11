@@ -1,0 +1,20 @@
+{
+  "name": "sandra-de-manuel-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio landing page for bailaora de flamenco Sandra de Manuel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "flamenco",
+    "portfolio",
+    "bailaora",
+    "sandra-de-manuel"
+  ],
+  "author": "Sandra de Manuel",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

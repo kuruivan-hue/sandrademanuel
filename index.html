@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sandra de Manuel — Bailaora de flamenco y docente en Barcelona. Formada en Sevilla y Jerez. Espectáculos, tablao, clases y eventos privados.">
+  <title>Sandra de Manuel — Arte Flamenco | Bailaora, Clases y Eventos</title>
+
+  <!-- Tipografías de referencia Dinamo Sites -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/logo-gold.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CABECERA Y NAVEGACIÓN MINIMALISTA
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="brand-wrapper" aria-label="Sandra de Manuel — Inicio">
+        <img src="assets/logo-gold.png" alt="Sandra de Manuel Logo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <div class="brand-name">Sandra de Manuel</div>
+          <div class="brand-subtitle">Arte Flamenco</div>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" role="navigation" aria-label="Navegación principal">
+        <a href="#trayectoria" class="nav-link">Trayectoria</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#servicios" class="nav-link">Clases & Eventos</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <button type="button" class="nav-cta-btn" data-open-contact data-service="General">
+          <span>Contactar</span>
+        </button>
+      </nav>
+
+      <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-expanded="false" aria-controls="mobileNavDrawer" aria-label="Abrir menú">
+        Menú
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer de navegación móvil -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <nav class="mobile-links" role="navigation" aria-label="Navegación móvil">
+      <a href="#trayectoria" class="mobile-link">Trayectoria</a>
+      <a href="#galeria" class="mobile-link">Galería</a>
+      <a href="#servicios" class="mobile-link">Clases & Eventos</a>
+      <a href="#contacto" class="mobile-link">Contacto</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <div>Sandra de Manuel · Barcelona</div>
+      <div style="margin-top: 8px;">De Raíz Flamenca Abramha</div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         1. HERO (100svh, VÍDEO ABSOLUTO COVER & FADE EDITORIAL NEGRO)
+         ========================================================================== -->
+    <section class="hero-section" id="hero" aria-label="Introducción Sandra de Manuel">
+      <!-- Media de fondo -->
+      <div class="hero-media-wrapper">
+        <video
+          id="heroVideo"
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          poster="assets/photos/hero-poster.jpg"
+          preload="auto"
+          aria-label="Vídeo de Sandra de Manuel bailando flamenco">
+          <source src="assets/videos/hero-loop.mp4" type="video/mp4">
+        </video>
+        <img
+          src="assets/photos/hero-poster.jpg"
+          alt="Sandra de Manuel en el tablao"
+          class="hero-poster-fallback">
+      </div>
+
+      <!-- Fade detrás del texto en paleta negra profunda -->
+      <div class="hero-fade-overlay" aria-hidden="true"></div>
+
+      <!-- Contenido tipográfico alineado a la izquierda -->
+      <div class="container hero-content-layer">
+        <div class="hero-main-block reveal">
+          <div class="hero-badge-tag">Bailaora · Clases · Eventos</div>
+          <h1 class="hero-title">
+            <span>Sandra</span>
+            <span><em>de Manuel</em></span>
+          </h1>
+          <p class="hero-lead-text">
+            El pulso del tablao tradicional con una mirada contemporánea, honda y sin límites. Formada en las cunas de Sevilla y Jerez.
+          </p>
+          <div class="hero-actions">
+            <a href="#trayectoria" class="btn-primary">Conocer trayectoria</a>
+            <a href="#galeria" class="btn-ghost">Ver espectáculos</a>
+          </div>
+        </div>
+
+        <!-- Pie de Hero -->
+        <div class="hero-footer-bar reveal reveal-delay-2">
+          <span>DE RAÍZ FLAMENCA</span>
+          <span>BARCELONA · SEVILLA · JEREZ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. SECCIÓN / EDITORIAL & BIO (GEOMETRÍA 1fr / 1.25fr CON FILAS ABIERTAS)
+         ========================================================================== -->
+    <section class="editorial-section" id="trayectoria" aria-label="Trayectoria y biografía">
+      <div class="container">
+        <div class="editorial-grid">
+          <!-- Columna 1 (1fr): Retrato arquitectónico enmarcado con borde 1px (sin pie de foto) -->
+          <div class="portrait-frame reveal">
+            <div class="portrait-inner">
+              <img
+                src="assets/photos/sandra-bio-portrait.jpg"
+                alt="Sandra de Manuel en plena actuación flamenca"
+                class="portrait-img"
+                loading="lazy">
+            </div>
+          </div>
+
+          <!-- Columna 2 (1.25fr): Texto bio y filas de datos abiertas -->
+          <div class="editorial-content">
+            <span class="section-tag reveal">Trayectoria & Bio</span>
+            <h2 class="editorial-title reveal reveal-delay-1">
+              Una vida entregada<br>
+              <em>al compás de la verdad.</em>
+            </h2>
+
+            <div class="editorial-bio-text reveal reveal-delay-2">
+              <p>
+                Bailaora, profesora y una de las creadoras de de raíz flamenca abramha, nacida en Barcelona. A los 24 años decidió dejar atrás toda una vida para dedicarse a aquello que realmente había conseguido cambiarla: el flamenco.
+              </p>
+              <p>
+                Comenzó su formación en La Tani y sus ganas de seguir aprendiendo la han llevado a formarse en Sevilla y Jerez, donde continúa nutriéndose de grandes maestros y maestras.
+              </p>
+
+              <blockquote class="editorial-bio-highlight">
+                Su trayectoria profesional ha pasado por escenarios como Tablao de Carmen, Tarantos, City Hall Flamenco y el Teatre Nacional de Catalunya, además de diferentes proyectos y espacios de enseñanza.
+              </blockquote>
+
+              <p>
+                En ella destacan, tanto sobre el escenario como en el trato personal, su cercanía, su calidez y esa capacidad de hacer sentir acompañada y acogida a cada persona que comparte camino con ella.
+              </p>
+              <p>
+                Como bailaora, se siente especialmente cercana al flamenco tradicional y a sus raíces, aunque entiende el arte desde una mirada abierta, inquieta y sin límites, siempre dispuesta a descubrir otros caminos y formas de expresión.
+              </p>
+              <p>
+                Pero, ante todo, Sandra es bailaora. Una mujer que encontró en el flamenco una forma de crecer personalmente, expresarse y seguir buscando.
+              </p>
+            </div>
+
+            <!-- Tres filas abiertas con divisores de 1px -->
+            <div class="editorial-rows-block reveal reveal-delay-3">
+              <div class="open-data-row">
+                <span class="row-bullet" aria-hidden="true">✦</span>
+                <span class="row-title">Raíz — Formación continua</span>
+                <span class="row-desc">Inicios en La Tani y perfeccionamiento en Sevilla y Jerez junto a maestros de referencia.</span>
+              </div>
+              <div class="open-data-row">
+                <span class="row-bullet" aria-hidden="true">✦</span>
+                <span class="row-title">Escenario — Tablao & Teatro</span>
+                <span class="row-desc">Tablao de Carmen, Tarantos, City Hall Flamenco y Teatre Nacional de Catalunya (TNC).</span>
+              </div>
+              <div class="open-data-row">
+                <span class="row-bullet" aria-hidden="true">✦</span>
+                <span class="row-title">Mirada — Cercanía & Libertad</span>
+                <span class="row-desc">Calidez pedagógica, respeto por el cante puro y una expresión escénica sin fronteras.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SECCIÓN / GALERÍA & ESCENA (FOTOGRAFÍAS Y REEL EN VIVO)
+         ========================================================================== -->
+    <section class="gallery-section" id="galeria" aria-label="Galería visual y vídeo">
+      <div class="container">
+        <div class="gallery-header reveal">
+          <div>
+            <span class="section-tag">Galería & Escena</span>
+            <h2 class="section-title">
+              La verdad del directo,<br>
+              <em>en cada compás.</em>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Mosaico arquitectónico de fotografías (click para lightbox) -->
+        <div class="photo-showcase-grid reveal reveal-delay-1">
+          <figure class="photo-card photo-card-lg" tabindex="0" role="button" aria-label="Ampliar fotografía 1: Intensidad escénica">
+            <img src="assets/photos/sandra-escena-1.jpg" alt="Sandra de Manuel en plena fuerza de tablao" loading="lazy">
+            <figcaption class="photo-card-overlay">
+              <span class="photo-caption-title">Fuerza y presencia en el tablao</span>
+              <span class="photo-zoom-icon" aria-hidden="true">↗</span>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card photo-card-sm" tabindex="0" role="button" aria-label="Ampliar fotografía 2: Perfil y braceo">
+            <img src="assets/photos/sandra-escena-2.jpg" alt="Sandra de Manuel marcando el braceo con bata de lunares" loading="lazy">
+            <figcaption class="photo-card-overlay">
+              <span class="photo-caption-title">Geometría del braceo tradicional</span>
+              <span class="photo-zoom-icon" aria-hidden="true">↗</span>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card photo-card-mid-1" tabindex="0" role="button" aria-label="Ampliar fotografía 3: Palmas y escucha">
+            <img src="assets/photos/sandra-escena-3.jpg" alt="Sandra de Manuel tocando las palmas en concentración" loading="lazy">
+            <figcaption class="photo-card-overlay">
+              <span class="photo-caption-title">El compás de las palmas y el silencio</span>
+              <span class="photo-zoom-icon" aria-hidden="true">↗</span>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card photo-card-mid-2" tabindex="0" role="button" aria-label="Ampliar fotografía 4: Cante y entrega">
+            <img src="assets/photos/sandra-escena-4.jpg" alt="Sandra de Manuel en diálogo con la cantaora" loading="lazy">
+            <figcaption class="photo-card-overlay">
+              <span class="photo-caption-title">Complicidad con el cante en directo</span>
+              <span class="photo-zoom-icon" aria-hidden="true">↗</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Showcase de vídeo (Reel Horizontal / Vertical) -->
+        <div class="video-showcase-box reveal reveal-delay-2">
+          <div class="video-showcase-top">
+            <div>
+              <div class="video-box-title">Reel de Actuaciones</div>
+              <div style="font-size: 13px; color: var(--color-ink-muted); margin-top: 4px;">Grabado en vivo en tablaos de Barcelona</div>
+            </div>
+            <div class="video-selector-tabs" role="tablist">
+              <button type="button" class="tab-btn is-active" data-target="horizontal" role="tab" aria-selected="true">
+                Formato Escénico 16:9
+              </button>
+              <button type="button" class="tab-btn" data-target="vertical" role="tab" aria-selected="false">
+                Formato Vertical 9:16
+              </button>
+            </div>
+          </div>
+
+          <div class="video-player-container" id="videoPlayerContainer">
+            <video
+              id="showcaseVideo"
+              class="showcase-video"
+              playsinline
+              preload="metadata"
+              poster="assets/photos/hero-poster.jpg"
+              src="assets/videos/hero-loop.mp4">
+            </video>
+            <div class="video-controls-overlay">
+              <button type="button" class="video-ctrl-btn" id="videoPlayPauseBtn" aria-label="Reproducir o pausar vídeo">
+                ▶
+              </button>
+              <span style="font-size: 12px; color: var(--color-ink); letter-spacing: 0.08em; text-transform: uppercase;">
+                Sandra de Manuel · Flamenco Reel
+              </span>
+              <button type="button" class="video-ctrl-btn" id="videoMuteBtn" aria-label="Activar o desactivar sonido">
+                🔇
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SECCIÓN / SERVICIOS: CLASES & EVENTOS
+         ========================================================================== -->
+    <section class="services-section" id="servicios" aria-label="Clases de baile y contratación de eventos">
+      <div class="container">
+        <div class="services-header reveal">
+          <span class="section-tag">Clases & Eventos</span>
+          <h2 class="section-title">
+            Aprender el arte o<br>
+            <em>vivirlo en escena.</em>
+          </h2>
+          <p style="margin-top: 20px; font-size: 16px; color: var(--color-ink-muted); line-height: 1.6;">
+            Propuestas formativas y espectáculos profesionales adaptados a alumnos, salas, espacios culturales y celebraciones privadas.
+          </p>
+        </div>
+
+        <div class="services-grid reveal reveal-delay-1">
+          <!-- Columna: Clases y Talleres -->
+          <article class="service-column">
+            <div>
+              <div class="service-header-part">
+                <div class="service-num">Formación</div>
+                <h3 class="service-name">Clases & Talleres</h3>
+                <p class="service-summary">
+                  Enseñanza cercana y rigurosa para quienes desean iniciarse o profundizar en el baile flamenco con respeto a sus códigos.
+                </p>
+              </div>
+
+              <ul class="service-items-list">
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Clases regulares:</strong> Técnica corporal, colocación, pies, compás y aprendizaje de coreografías tradicionales.</span>
+                </li>
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Talleres intensivos:</strong> Encuentros de fin de semana para escuelas de danza, centros cívicos y colectivos.</span>
+                </li>
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Clases particulares:</strong> Acompañamiento individual a medida para perfeccionamiento técnico o preparación de piezas.</span>
+                </li>
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Filosofía docente:</strong> Calidez humana, paciencia y un espacio seguro para expresarse y crecer.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-cta-area">
+              <button type="button" class="btn-primary" data-open-contact data-service="Clases y Talleres">
+                Consultar clases
+              </button>
+            </div>
+          </article>
+
+          <!-- Columna: Eventos y Espectáculos -->
+          <article class="service-column">
+            <div>
+              <div class="service-header-part">
+                <div class="service-num">Escenario</div>
+                <h3 class="service-name">Eventos & Espectáculos</h3>
+                <p class="service-summary">
+                  La emoción pura del flamenco en vivo con artistas profesionales de primer nivel para veladas inolvidables.
+                </p>
+              </div>
+
+              <ul class="service-items-list">
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Cuadro flamenco de tablao:</strong> Baile, cante y toque de guitarra acústico en directo.</span>
+                </li>
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Eventos privados y corporativos:</strong> Actuaciones para cenas de gala, recepciones, bodas y congresos.</span>
+                </li>
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Festivales y teatros:</strong> Piezas y coreografías adaptadas a programación escénica y auditorios.</span>
+                </li>
+                <li class="service-item-row">
+                  <span class="service-bullet" aria-hidden="true"></span>
+                  <span><strong>Ámbito geográfico:</strong> Residencia en Barcelona, con plena disponibilidad para desplazamientos y giras.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-cta-area">
+              <button type="button" class="btn-primary" data-open-contact data-service="Espectáculos y Eventos">
+                Solicitar propuesta
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. SECCIÓN / CIERRE & CONTACTO (82svh EN BASE NEGRA CON CÍRCULOS DORADOS)
+         ========================================================================== -->
+    <section class="closing-section" id="contacto" aria-label="Contacto y contratación">
+      <!-- Tres círculos concéntricos finos saliendo del borde derecho -->
+      <div class="concentric-circles-layer" aria-hidden="true">
+        <div class="circle-ring circle-ring-1"></div>
+        <div class="circle-ring circle-ring-2"></div>
+        <div class="circle-ring circle-ring-3"></div>
+        <img src="assets/logo-gold.png" alt="" class="circle-logo-watermark">
+      </div>
+
+      <div class="container closing-content-layer">
+        <div class="closing-main-grid">
+          <!-- Bloque editorial izquierdo -->
+          <div class="reveal">
+            <div class="closing-tag">Contacto</div>
+            <h2 class="closing-title">
+              Tu próximo compás<br>
+              <em>empieza aquí.</em>
+            </h2>
+            <p class="closing-lead-copy">
+              Para contrataciones escénicas, talleres de formación o proyectos artísticos, conversemos sobre cómo llevar el arte flamenco a tu espacio.
+            </p>
+            <div class="closing-actions">
+              <button type="button" class="btn-accent" data-open-contact data-service="Contacto General">
+                Contactar con Sandra
+              </button>
+              <a href="https://wa.me/34600000000?text=Hola%20Sandra,%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tus%20clases%20o%20espect%C3%A1culos" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+                WhatsApp directo ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Tarjeta minimalista de datos de contacto solicitada -->
+          <div class="contact-data-card reveal reveal-delay-2">
+            <div class="contact-row-item">
+              <div class="contact-label">Ubicación</div>
+              <div class="contact-value">Barcelona, Cataluña · Disponible para giras</div>
+            </div>
+            <div class="contact-row-item">
+              <div class="contact-label">Correo electrónico</div>
+              <div class="contact-value">
+                <a href="mailto:sandrademanuelbailaora@gmail.com">sandrademanuelbailaora@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-row-item">
+              <div class="contact-label">Redes</div>
+              <div class="contact-value">
+                <a href="https://instagram.com/sandrademanuel_bailaora" target="_blank" rel="noopener noreferrer">@sandrademanuel_bailaora ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie de página final -->
+      <div class="container">
+        <footer class="site-footer-bar">
+          <div>Sandra de Manuel · Arte Flamenco</div>
+          <div>Barcelona · Sevilla · Jerez</div>
+          <div>
+            <a href="#hero" class="footer-back-to-top">Volver arriba ↑</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MODAL LIGHTBOX (AMPLIACIÓN DE FOTOS DE GALERÍA)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Fotografía ampliada">
+    <button type="button" class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Cerrar modal">
+      Cerrar ✕
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL DE CONTACTO RÁPIDO
+       ========================================================================== -->
+  <div class="contact-modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <div class="contact-modal-dialog">
+      <button type="button" class="modal-close-trigger" data-close-contact aria-label="Cerrar formulario">
+        ✕
+      </button>
+      <h3 class="modal-form-title" id="contactModalTitle">Mensaje para Sandra</h3>
+      <p class="modal-form-subtitle">Completa el formulario para reservar clases o solicitar presupuesto para tu evento.</p>
+
+      <form id="contactQuickForm">
+        <div class="form-group">
+          <label class="form-label" for="contactName">Tu nombre</label>
+          <input type="text" id="contactName" class="form-input" required placeholder="Nombre completo">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contactEmail">Correo electrónico o teléfono</label>
+          <input type="text" id="contactEmail" class="form-input" required placeholder="email@ejemplo.com o teléfono">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contactServiceSelect">Motivo de contacto</label>
+          <select id="contactServiceSelect" class="form-select">
+            <option value="Clases y Talleres">Clases y Talleres formativos</option>
+            <option value="Espectáculos y Eventos">Espectáculos y Eventos privados</option>
+            <option value="Proyectos y Giras">Proyectos artísticos y Giras</option>
+            <option value="General">Otra consulta</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contactMessage">Detalle del mensaje</label>
+          <textarea id="contactMessage" class="form-textarea" rows="3" placeholder="Indica fechas estimadas, nivel o tipo de evento..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 8px;">
+          Enviar consulta
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
